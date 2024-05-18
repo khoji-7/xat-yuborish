@@ -17,49 +17,28 @@
       <li><a href="#home">Bosh sahifa</a></li>
       <li><a href="#acceptance">Xatlarni Qabul Qilish</a></li>
       <li><a href="#registration">Ro'yxatdan O'tkazish</a></li>
+      <li><a href="#expres">Tez yetkazish</a></li>
       <li><a href="#tracking">Kuzatish</a></li>
+      <li><a href="#tariflar">Tariflar</a></li>
+
       <li><a href="#contact">Kontakt</a></li>
     </ul>
   </nav>
   <header>
     <h1>Yetkazib berish tariflari</h1>
   </header>
-  <div class="container">
-    <div class="tariff-card">
-      <h2>Standart Tarif</h2>
-      <ul>
-        <li><strong>Yetkazib berish kunlari:</strong> Dushanba - Juma</li>
-        <li><strong>Yetkazib berish vaqti:</strong> 10:00 dan 18:00 gacha</li>
-        <li><strong>Yetkazib berish tezligi:</strong> 3 kun ichida</li>
-        <li><strong>Yetkazib berishning standart hajmi:</strong> 5 kg</li>
-        <li><strong>Narx:</strong> <span>$10 oyiga</span></li>
-      </ul>
-    </div>
-    <div class="tariff-card">
-      <h2>Ekspress Tarif</h2>
-      <ul>
-        <li><strong>Yetkazib berish kunlari:</strong> Dushanba - Juma</li>
-        <li><strong>Yetkazib berish vaqti:</strong> 10:00 dan 18:00 gacha</li>
-        <li><strong>Yetkazib berish tezligi:</strong> 24 soat ichida</li>
-        <li><strong>Yetkazib berishning standart hajmi:</strong> 5 kg</li>
-        <li><strong>Narx:</strong> <span>$20 oyiga</span></li>
-      </ul>
-    </div>
-    <div class="tariff-card">
-      <h2>Premium Tarif</h2>
-      <ul>
-        <li><strong>Yetkazib berish kunlari:</strong> Har kuni</li>
-        <li><strong>Yetkazib berish vaqti:</strong> 24 soat ichida</li>
-        <li><strong>Yetkazib berish tezligi:</strong> 1 kun ichida</li>
-        <li><strong>Yetkazib berishning standart hajmi:</strong> 10 kg</li>
-        <li><strong>Narx:</strong> <span>$30 oyiga</span></li>
-      </ul>
-    </div>
-  </div>
+  
   <main>
     <section id="home">
-      <h2>Bosh sahifa</h2>
-      <p>Xush kelibsiz! Bu yerda xat va hujjatlarni qabul qilish va ro'yxatdan o'tkazish jarayonlarini optimallashtirishingiz mumkin.</p>
+      <h2 style="text-align: center;">Bosh sahifa</h2>
+      <p style="text-align: center;">Xush kelibsiz!  
+        <br>
+        Bu sayt orqali siz pochta jo'natmalarini masofadan 
+        <br>turib ro'yxatdan o'tkazishingiz va uni yuborinshingiz mumkin.
+        <br>Agar siz har doim jo'natmalr yuborsangiz biz tariflarimizdan foydalaning!
+        <br>Agar jo'natma tezda yetkazilish kerak bo'lsa expres tarifimizdan foydalaning!
+        <br>Biz bilan tez va ishonchli yuboring.
+      </p>
     </section>
     <section id="acceptance">
       <h2>Xatlarni Qabul Qilish</h2>
@@ -93,7 +72,34 @@
         <button type="submit"onclick="sendTelegramMessage ()" ><i class="fas fa-paper-plane"></i> Yuborish</button>
       </form>
     </section>
+    <section id="expres">
+      <h2>Exspress Pochta Jo'natmasini  yuborish</h2>
+      <form>
+        <label for="trackNumber">Jo'natuvchi ismi:</label>
+        <input type="text" id="sendersName" name="trackNumber" required>
+        <label for="trackNumber">Jo'natuvchi telefon nomeri:</label>
+        <input type="text" id="sendersNumber" name="trackNumber" required>
+        <label for="trackNumber">Qabul qiluvchi ismi:</label>
+        <input type="text" id="exceptsName" name="trackNumber" required>
+        <label for="trackNumber">Qabul qiluvchi nomeri:</label>
+        <input type="text" id="exceptsNumber" name="trackNumber" required>
+        <label for="trackNumber">Jo'natuvchi manzili: </label>
+        <input type="text" id="sendersLoc" name="trackNumber" required>
+        <label for="trackNumber">Qabul qiluvchi manzili:</label>
+        <input type="text" id="exceptsLoc" name="trackNumber" required>
+        <label for="trackNumber">Oraliq masofa</label>
+        <input type="text" id="distance" name="trackNumber" required>
+        <label for="trackNumber">Jo'natma tavsilotlari</label>
+        <input type="text" id="postweight" name="trackNumber" required>
+        <button type="submit" onclick=" calculate ()">Hisoblash</button>
+      </form>
+    </section>
+
+
+
     <section id="registration">
+
+
       <h2>Ro'yxatdan O'tkazish</h2>
       <form>
         <label for="docNumber">Hujjat raqami:</label>
@@ -112,6 +118,39 @@
       </form>
       
     </section>
+    <div class="container" id="tariflar">
+      <div class="tariff-card">
+        <h2>Standart Tarif</h2>
+        <ul>
+          <li><strong>Yetkazib berish kunlari:</strong> Dushanba - Juma</li>
+          <li><strong>Yetkazib berish vaqti:</strong> 10:00 dan 18:00 gacha</li>
+          <li><strong>Yetkazib berish tezligi:</strong> 3 kun ichida</li>
+          <li><strong>Yetkazib berishning standart hajmi:</strong> 5 kg</li>
+          <li><strong>Narx:</strong> <span>$10 oyiga</span></li>
+        </ul>
+      </div>
+      <div class="tariff-card">
+        <h2>Ekspress Tarif</h2>
+        <ul>
+          <li><strong>Yetkazib berish kunlari:</strong> Dushanba - Juma</li>
+          <li><strong>Yetkazib berish vaqti:</strong> 10:00 dan 18:00 gacha</li>
+          <li><strong>Yetkazib berish tezligi:</strong> 24 soat ichida</li>
+          <li><strong>Yetkazib berishning standart hajmi:</strong> 5 kg</li>
+          <li><strong>Narx:</strong> <span>$20 oyiga</span></li>
+        </ul>
+      </div>
+      <div class="tariff-card">
+        <h2>Premium Tarif</h2>
+        <ul>
+          <li><strong>Yetkazib berish kunlari:</strong> Har kuni</li>
+          <li><strong>Yetkazib berish vaqti:</strong> 24 soat ichida</li>
+          <li><strong>Yetkazib berish tezligi:</strong> 1 kun ichida</li>
+          <li><strong>Yetkazib berishning standart hajmi:</strong> 10 kg</li>
+          <li><strong>Narx:</strong> <span>$30 oyiga</span></li>
+        </ul>
+      </div>
+    </div>
+    
     <section id="tracking">
       <h2>Kuzatish</h2>
       <form>
@@ -126,6 +165,12 @@
     <section id="contact">
       <h2>Kontakt</h2>
       <p>Biz bilan bog'laning: email@example.com</p>
+     <p><a href="https://www.instagram.com/khoji.7/">instagram</a></p> 
+      <p><a href="https:/t.me/khoji_7">telegram</a></p>
+      <p>
+        Tel:+998-94-899-99-49
+      </p>
+
     </section>
   </footer>
  <script src="./index.js">

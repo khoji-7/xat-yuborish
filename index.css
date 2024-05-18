@@ -120,6 +120,11 @@ Global Styles
   footer p {
     margin: 0;
   }
+  a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+  }
   
   @media (max-width: 768px) {
     nav ul li {

@@ -54,3 +54,42 @@ async function sendTelegramMessage() {
     }
     console.log(Name);
 }
+
+function calculate (){
+   
+    const exceptsName = document.getElementById("exceptsName").value;
+    const sendersLoc = document.getElementById("sendersLoc").value;
+    const exceptsLoc = document.getElementById("exceptsLoc").value;
+    const distance = document.getElementById("distance").value;
+    const postweight = document.getElementById("postweight").value;
+    
+    if(distance<100){
+        let price = distance*postweight*1000;
+        alert(` Jo'natma ${sendersLoc} shahardan ${exceptsLoc} shaharga 2 soat ichida ${exceptsName} yetkaziladi narxi ${price} so'm`)
+    }
+    else if(distance<200){
+        let price = distance*postweight*1000;
+        alert(` Jo'natma ${sendersLoc} shahardan ${exceptsLoc} shaharga 3.5 soat ichida ${exceptsName} yetkaziladi narxi ${price} so'm`)
+    }
+    else if(distance<400){
+        let price = distance*postweight*1000;
+        alert(` Jo'natma ${sendersLoc} shahardan ${exceptsLoc} shaharga 6 soat ichida ${exceptsName} yetkaziladi narxi ${price} so'm`)
+    }
+    else if(distance<600){
+        let price = distance*postweight*1000;
+        alert(` Jo'natma ${sendersLoc} shahardan ${exceptsLoc} shaharga 8 soat ichida ${exceptsName} yetkaziladi narxi ${price} so'm`)
+    }
+    else if(distance<800){
+        let price = distance*postweight*1000;
+        alert(` Jo'natma ${sendersLoc} shahardan ${exceptsLoc} shaharga 10 soat ichida ${exceptsName} yetkaziladi narxi ${price} so'm`)
+    }
+    else if(distance<1200){
+        let price = distance*postweight*1000;
+        alert(` Jo'natma ${sendersLoc} shahardan ${exceptsLoc} shaharga 16 soat ichida ${exceptsName} yetkaziladi narxi ${price} so'm`)
+    }
+    else{
+        let  price = distance*postweight*1000;
+        alert(` Jo'natma ${sendersLoc} shahardan ${exceptsLoc} shaharga 5 kun ichida ${exceptsName} yetkaziladi narxi ${price} so'm`)
+
+    }
+}
